@@ -3,8 +3,42 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
-
 html,body{
 	height: 100%;
+}
+header{
+	padding: 10px 2%;
+	width: 100%;
+	background-color: gray;
+}
+.clear{
+	clear: both;
+}
+section{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1280px;
+}
+.logo1{
+	float: left;
+	width: 230px;
+	height: 70px;
+	background-image: url(../imagens/logo1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.logo2{
+	float: right;
+	width: 200px;
+	height: 56px;
+	background-image: url(../imagens/logo2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+@media screen and (max-width: 510px){
+	.logo1,.logo2{
+		display: block;
+		margin: 0px auto 25px;
+		float: none;
+	}
 }
