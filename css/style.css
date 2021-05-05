@@ -8,15 +8,18 @@ html,body{
 	height: 100%;
 	font-family: 'Lato', sans-serif
 }
+body{
+	background-color: gray;
+}
 header{
 	padding: 10px 2% 40px 2%;
 	width: 100%;
-	background-color: rgb(180, 180, 180);
+	background-color: #A6866A;
 }
 .clear{
 	clear: both;
 }
-section{
+.center{
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1280px;
@@ -46,21 +49,21 @@ section{
 	width: 100%;
 	max-width: 1280px;
 	height: 500px;
+	position: relative;
 }
 aside{
+	position: absolute;
+	right: 30px;
 	box-shadow: 1px 1px 2px 1px black;
-	margin-right: 15px;
-	float: right;
 	width: 400px;
-	height: 110%;
-	position: relative;
-	top: -5%;
-	background-color: rgba(255, 255, 255, 0.7);
+	height: 105%;
+	top: -2.5%;
+	background-color: #a6866ab0;
 }
 aside h2{
 	font-weight: normal;
 	padding: 20px 15px;
-	background-color: rgb(210, 210, 210);
+	background-color: #8C633F;
 	font-size: 18px;
 }
 form{
@@ -75,7 +78,7 @@ input{
 	line-height: 45px;
 }
 input[type=submit]{
-	background-color: #003854;
+	background-color: #8C4014;
 	text-transform: uppercase;
 	color: white;
 	border: 0;
@@ -86,31 +89,40 @@ input[type=submit]{
 	font-size: 20px;
 }
 input[type=submit]:hover{
-	background-color: #004568 ;
-
+	background-color: #594839
 }
 main{
-	margin: 0 auto;
-	padding: 30px 0;
-	text-align: center;
-	background-color: #ba8f71;
-	display: inline-block;
-	padding: 0;
 	width: 100%;
-	max-width: 1280px;
 }
+
 section.chamada{
-	padding: 20px;
-}
-section.chamada h2{
 	text-align: center;
-	width: 96%;
-	max-width: 600px;
-	display: inline-block;
-	color: white;
+	padding: 70px 0px 50px;
+	background-color: #594839;
+}
+
+section.chamada h2{
+	color: rgb(255, 255, 255);
 	font-size: 30px;
 	font-weight: normal;
 }
+
+section.chamada p{
+	color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 960px){
+	.bg{
+		text-align: center;
+	}
+	aside{
+		display: inline-block;
+		position: static;
+		height: 100%;
+		width: 96%;
+		max-width: 400px;
+	}
+}
+
 @media screen and (max-width: 510px){
 	.logo1,.logo2{
 		display: block;
