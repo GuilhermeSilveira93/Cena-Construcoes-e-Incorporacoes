@@ -92,6 +92,7 @@ input[type=submit]:hover{
 	background-color: #594839
 }
 main{
+	position: relative;
 	width: 100%;
 }
 
@@ -110,6 +111,55 @@ section.chamada h2{
 section.chamada p{
 	color: rgb(255, 255, 255);
 }
+.seta{
+	position: absolute;
+	left: 50%;
+	top: -31px;
+	transform: translate(-50%,0%);
+	background-image: url(../imagens/arrow.png);
+	background-size: 100%;
+	width: 64px;
+	height: 64px;
+}
+.flex{
+	display: flex;
+	background-color: #8f735b;
+	height: 250px;
+}
+.flex:nth-child(2n+2){/*POSSO FAZER ISSO, OU IR DIV POR DIV E DEFINIR O ORDER*/
+	flex-direction: row-reverse;
+
+}
+.bgflex{
+	width: 60%;
+	background-position: center;
+	background-size: cover;
+}
+.text{
+	color: #ffffff;
+	padding: 50px;
+	width: 40%;
+	text-align: justify;
+}
+.bgmosaico1{
+	background-image: url(../imagens/mosaico1.jpg);
+}
+.bgmosaico2{
+	background-image: url(../imagens/mosaico2.jpg);
+}
+.bgmosaico3{
+	background-image: url(../imagens/mosaico3.jpg);
+}
+.bgmosaico4{
+	background-image: url(../imagens/mosaico4.jpg);
+}
+footer{
+	background-color: #F2F2F2;
+	padding: 25px;
+}
+footer p{
+	text-align: center;
+}
 @media screen and (max-width: 960px){
 	.bg{
 		text-align: center;
@@ -121,8 +171,27 @@ section.chamada p{
 		width: 96%;
 		max-width: 400px;
 	}
-}
+	.seta{
+		display: none;
+	}
 
+@media screen and (max-width: 760px){
+	.flex{
+		display: block;
+		width: 100%;
+		height: 460px;
+	}
+	.bgflex{
+		height: 350px;
+		width: 100%;
+		background-position: center;
+		background-size: cover;
+	}
+	.text{
+		padding: 25px;
+		width: 100%;
+		text-align: justify;
+	}
 @media screen and (max-width: 510px){
 	.logo1,.logo2{
 		display: block;
