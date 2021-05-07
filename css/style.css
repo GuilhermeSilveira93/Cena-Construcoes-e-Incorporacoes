@@ -176,7 +176,7 @@ footer p{
 	}
 
 @media screen and (max-width: 760px){
-	.flex{
+	/*.flex{
 		display: block;
 		width: 100%;
 		height: 460px;
@@ -184,14 +184,28 @@ footer p{
 	.bgflex{
 		height: 350px;
 		width: 100%;
-		background-position: center;
-		background-size: cover;
+		background-position: center;					ESSE É UMA OPÇÃO.
+		background-size: cover;					MAS PREFERI USAR O FLEX-WRAP
+	}
+	.text{
+		padding: 25px;
+		width: 100%;
+		text-align: justify;
+	}*/
+	.flex{
+		flex-wrap: wrap;
+		height: 460px;
+	}
+	.bgflex{
+		height: 350px;
+		width: 100%;
 	}
 	.text{
 		padding: 25px;
 		width: 100%;
 		text-align: justify;
 	}
+}
 @media screen and (max-width: 510px){
 	.logo1,.logo2{
 		display: block;
